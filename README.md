@@ -7,5 +7,5 @@ Assistant scolaire bilingue (FR/EN) : chatbot, generation de QR Codes et suivi d
 - Suivi des notes et statistiques
 
 ## Installation
-pip install -r requirements.txt
-streamlit run app.py
+- pip install -r requirements.txt
+- streamlit run app.py
