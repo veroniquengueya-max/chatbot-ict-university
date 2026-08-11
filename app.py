@@ -43,6 +43,8 @@ def chercher_reponse(question_fr, langue):
     elif any(mot in question_fr for mot in["licence","master","niveau","bachelor"]):
         return infos_ecole["activities"][langue]
     elif "semestre" in question_fr:
+        return info_ecole["semestre"][langue]
+    elif "bonjour" in question_fr or "salut" in question_fr:
         return "Bonjour! Comment puis-je vous aidez ?" if langue == "fr" else "Hello! How can I help you ?"
     else:
         return "Desole, je ne comprends pas votre question." if langue == "fr" else "Soory, I don't understand your question."
@@ -196,14 +198,14 @@ elif onglet == "Voir le classement des matieres":
         if notes_par_matiere:
             moyennes = {m: sum(s)/len(s) for m, s in notes_par_matiere.items()}
             for matiere, moyenne in sorted(moyennes.items(), key=lambda x: x[1], reverse=True):
-                st.write(f"{mztiere} : {moyenne:.1f}/100")
+                st.write(f"{matiere} : {moyenne:.1f}/100")
             st.bar_chart(moyennes)
         else:
-            st.info("Aucune note enregistree pour le moment")
+            st.info("Aucune note enregistrer pour le moment")
     else:
-        st.info("Aucune note enregistree pour le mmoment")
+        st.info("Aucune note enregistrer pour le moment")
 
-elif onglett == "Verifier les ecarts":
+elif onglet == "Verifier les ecarts":
     st.subheader("Ecarts entre professeur et system offiviel")
     if os .path.isfile("notes_professeurs.csv") and os.path.isfile("notes.csv"):
         notes_profs = {}
