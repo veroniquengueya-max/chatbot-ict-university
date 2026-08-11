@@ -1,6 +1,6 @@
 infos_ecole = {
     "reglement": {
-        "fr": "Le réglement interieur couvre la pontualité, la tenue vestimentaire, et le comportementen classe. Le document complet est disponible auprés de l'administration.",
+        "fr": "Le réglement interieur couvre la pontualité, la tenue vestimentaire, et le comportement en classe. Le document complet est disponible auprés de l'administration.",
         "en": "The internal rules cover the punctuality, dress code, and classroom behaviour. The full document is advailable from  the adminstration."
     },
     "frais_scolarite":{
@@ -21,10 +21,10 @@ infos_ecole = {
     },
     "activites":{
         "fr": "L'Université organise des activités parascolaires incluant clubs académique, évènemments sportifs, et journéés culturellestout au long de l'année.",
-        "en": "The school organizes extracurricular zctivities including acadeemic clubs, sport events, and Cultural days throughout the year."
+        "en": "The school organizes extracurricular activities including academic clubs, sport events, and Cultural days throughout the year."
     },
     "semestres":{
-        "fr": "L'année académiqueest diviséé en trois semestres : Automne (Fall, à partir d'Octobre), Printemps(Spring, à partir de Mars) et L'été(Summer, à partir de Juin), celui ci est optionel.",
+        "fr": "L'année académique est diviséé en trois semestres : Automne (Fall, à partir d'Octobre), Printemps(Spring, à partir de Mars) et L'été(Summer, à partir de Juin), celui ci est optionel.",
         "en": "The academic year is divided into three semesters: Fall(starting in October), Spring(starting in March) and Summer(starting in June), Summer is optional."
     }
 }    
