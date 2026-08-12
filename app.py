@@ -41,7 +41,7 @@ def chercher_reponse(question_fr, langue):
     elif any(mot in question_fr for mot in["activité","activities","club"]):
         return infos_ecole["activites"][langue]
     elif any(mot in question_fr for mot in["licence","master","niveau","bachelor"]):
-        return infos_ecole["activities"][langue]
+        return infos_ecole["niveau"][langue]
     elif "semestre" in question_fr:
         return info_ecole["semestre"][langue]
     elif "bonjour" in question_fr or "salut" in question_fr:
